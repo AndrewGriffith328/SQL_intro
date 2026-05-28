@@ -1,0 +1,51 @@
+*** Task 1 *** 
+
+Select *
+From Customer;
+
+Customer
+ID the primary key: CusomerId
+ID the foreign key: SupportRepID
+It links to Employee
+
+table       Primary             foreign         Link
+-------------------------------------------------------------------------
+Customer    CustomerId          SupportRepID    Employee
+Album       AlbumId             ArtistId        ArtistId
+ArtistId    ArtistId            N/Album         N/A
+*Employee    EmployeeId         ReportsTo       Employee
+Genre       GenreId             N/A             N/A
+Invoice     InvoiceId           CusomerId       Customer
+Invoiceline InvoicelineId       TrackId         TrackId
+MediatType  MediatTypeId        N/A             N/Al
+Playlist    PlaylistId          N/A             N/A
+PlaylistTr  PlaylistId           PlaylistId     Playlist, PlaylistId
+            TrackId             TrackId
+Track       TrackId             AlbumId,        MediatType, MediatTypeId
+                                GenreId, 
+                                MediatTypeId
+------------------------------------------------------------------------
+
+*** Task 2 ***
+
+1. & 2. : Select FirstName as first, LastName as last, Country
+From Customer;
+
+3. Query with specific columns makes the data more focused on the info you want where as "*" brings
+much more info.
+
+*** Task 3 ***
+
+1. SELECT *
+FROM Customer
+Where Country like "USA"
+
+2. SELECT *
+FROM Track
+Where UnitPrice > 1.00 OR Milliseconds < 100000 
+
+3. SELECT *
+From Customer 
+WHERE State = "CA" AND PostalCode like '9%';
+
+*** Task 4
