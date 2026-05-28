@@ -90,3 +90,52 @@ SELECT FirstName, LastName, FirstName || " " || LastName as Full_Name
 FROM Customer
 
 ** Advanced Challenge
+SELECT *
+FROM Track
+ORDER BY Milliseconds DESC 
+LIMIT 1
+
+Longest: Occupation
+
+SELECT *
+FROM Track
+ORDER BY Milliseconds ASC 
+LIMIT 1
+
+Shortest: É Uma Partida De Futebol
+
+SELECT FirstName || " " || LastName as Full_Name,
+Country
+FROM Customer
+
+
+##Extra credit
+
+Top 5 most expensive:
+Battlestar Galactica: The Story So Far
+Occupation / Precipice
+"Exodus, Pt. 1"
+"Exodus, Pt. 2"
+Collaborators
+
+SELECT Name
+FROM track
+ORDER BY UnitPrice DESC
+LIMIT 5
+
+10 most recent invoices:
+2013-12-22 00:00:00
+2013-12-14 00:00:00
+2013-12-09 00:00:00
+2013-12-06 00:00:00
+2013-12-05 00:00:00
+2013-12-04 00:00:00
+2013-12-04 00:00:00
+2013-11-21 00:00:00
+2013-11-13 00:00:00
+2013-11-08 00:00:00
+
+SELECT *
+FROM Invoice
+ORDER BY InvoiceDate DESC
+LIMIT 10
