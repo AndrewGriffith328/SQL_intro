@@ -49,3 +49,44 @@ From Customer
 WHERE State = "CA" AND PostalCode like '9%';
 
 *** Task 4
+
+SELECT *
+
+FROM Track
+WHERE UnitPrice BETWEEN 0.01 AND 0.99;
+
+
+SELECT *
+FROM Customer
+WHERE Country IN('Brazil', 'Norway', 'Austria');
+
+
+SELECT *
+FROM Invoice
+WHERE Billingstate IS NOT NULL
+
+*** Task 5
+
+SELECT *
+FROM track
+ORDER BY UnitPrice DESC
+LIMIT 10;
+
+SELECT *
+FROM Customer
+ORDER BY LastName ASC;
+
+SELECT *
+FROM track
+ORDER BY UnitPrice DESC
+LIMIT 10
+OFFSET 10
+
+***Task 6
+SELECT DISTINCT Country
+FROM Customer;
+
+SELECT FirstName, LastName, FirstName || " " || LastName as Full_Name
+FROM Customer
+
+** Advanced Challenge
